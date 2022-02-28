@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond&family=Josefin+Sans:wght@300&family=Montserrat:wght@300;500&family=Sedgwick+Ave&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    background-color: whitesmoke;
+
+
+}
+
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: whitesmoke;
+
+
+}
+
+.navegable{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-column-gap: 3%;   
+}
+
+nav ul li{
+    margin-top: 15px;  
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+
+
+}
+
+h1 {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+    
+}
+
+
+
+
+.botones__menu {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 15px;
+}
+
+
+.galeria__inicio{
+    grid-area: galeria;
+    height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1563305589-e4995799dba3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80);
+    background-attachment: fixed;
+
+    
+}
+
+h2 {
+    margin-top: 80px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+
+.boton__galeria {
+    padding: 10px 20px 10px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: black;
+    border-radius: 5%;
+    border: none;
+}
+
+.boton__galeria:hover {
+    background-color: white;
+
+
+}
+
+
+
+.tipografia__boton {
+    color: white;
+
+}
+
+.tipografia__boton:hover{
+    color: black;
+}
+
+
+.seccion__sobremi{
+    grid-area: sobremi;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: whitesmoke;
+    height: 500px;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.texto__sobremi{
+    padding: 100px 20px 100px 20px;
+    
+    
+
+}
+
+h3{
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    display: flex;
+    
+}
+.parrafo__sobremi {
+    width: 70%;
+    margin-top: 30px;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 25px;
+    line-height: 1;
+    text-align: justify;
+    display: flex;
+    
+}
+
+.imagen__sobremi{
+    float: right;
+    width: 350px;
+    padding: 30px;
+    display: flex;
+    vertical-align: middle;
+
+} 
+
+
+
+.seccion__video{
+    grid-area: video;
+    height: 600px;
+    background-color: whitesmoke;
+    align-items: center;
+
+}
+h4{
+    margin-top: 10px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    text-transform: uppercase;
+}
+
+.video__trabajo{
+    margin: 0 auto;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+footer {
+        grid-area: footer;
+    padding: 30px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+}
+
+.logo__instagram{
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.logo__instagram:hover{
+    transform: scale(2)
+}
+
+.logo__youtube{
+    height: 35px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo__youtube:hover{
+    transform: scale(2)
+}
+
+.logo__facebook{
+    height: 35px;
+    margin: 0 auto;
+     display: flex;
+}
+
+
+.logo__facebook:hover{
+    transform: scale(2)
+}
+
+.wrapper{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header"
+    "galeria"
+    "sobremi"
+    "video"
+    "footer";
+
+}
+
+@media  screen and (min-width: 320px) {
+    .wrapper{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "header header"
+        "galeria galeria"
+        "sobremi sobremi"
+        "video video"
+        "footer footer";
+
+    }
+
+    nav ul {
+        flex-direction: row;
+
+    }
+
+    
+}
+
+@media  screen and (min-width: 700px) {
+    .wrapper{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "header header"
+        "galeria galeria"
+        "sobremi sobremi"
+        "video video"
+        "footer footer";
+
+    }
+
+    nav ul {
+        flex-direction: row;
+
+    }
+
+    
+}
+
+
+
+
+.ornamento{
+    width: 500px;
+    height: 500px;
+
+}
+
+.galeria__tatuajes{
+display: grid;
+grid-template-columns: 500px 500px 500px;
+grid-gap: 10px;
+ 
+}
+
+
+
+
+form{
+	width:300px;
+	padding:16px;
+	margin: 0 auto;
+	background-color:#ccc;
+}
+
+form label{
+	width:72px;
+	font-family: 'Montserrat', sans-serif;
+    padding: auto;
+    margin: 5px;
+	display:inline-block;
+}
+
+form input,
+form input{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+
+
+textarea{
+	width:95%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin: 0 auto;
+	display:block;
+}
+
+
+
+
