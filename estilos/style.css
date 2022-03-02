@@ -9,39 +9,26 @@
 
 body {
     background-color: whitesmoke;
-
-
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "secgaleria"
+    "secsobremi"
+    "secvideo"
+    "footer";
 }
 
 
 header {
     grid-area: header;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     background-color: whitesmoke;
-
-
-}
-
-.navegable{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-column-gap: 3%;   
-}
-
-nav ul li{
-    margin-top: 15px;  
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 10px;
-
 
 }
+
 
 h1 {
-    display: flex;
-    align-items: flex-start;
+
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
     color: black;
@@ -50,17 +37,23 @@ h1 {
 }
 
 
-
-
 .botones__menu {
     font-family: 'Montserrat', sans-serif;
     color: black;
     font-size: 15px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.botones__menu:hover{
+    color: gray;
+
 }
 
 
+
 .galeria__inicio{
-    grid-area: galeria;
+    grid-area: secgaleria;
     height: 400px;
     background-image: url(https://images.unsplash.com/photo-1563305589-e4995799dba3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80);
     background-attachment: fixed;
@@ -69,11 +62,11 @@ h1 {
 }
 
 h2 {
-    margin-top: 80px;
-    padding: 50px;
+    padding-top: 90px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     text-transform: uppercase;
@@ -95,8 +88,7 @@ h2 {
 
 .boton__galeria:hover {
     background-color: white;
-
-
+    
 }
 
 
@@ -112,7 +104,7 @@ h2 {
 
 
 .seccion__sobremi{
-    grid-area: sobremi;
+    grid-area: secsobremi;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: whitesmoke;
@@ -162,7 +154,7 @@ h3{
 
 
 .seccion__video{
-    grid-area: video;
+    grid-area: secvideo;
     height: 600px;
     background-color: whitesmoke;
     align-items: center;
@@ -190,7 +182,7 @@ h4{
 
 
 footer {
-        grid-area: footer;
+    grid-area: footer;
     padding: 30px;
     background-color: lightgrey;
     display: flex;
@@ -208,7 +200,8 @@ footer {
 }
 
 .logo__instagram:hover{
-    transform: scale(2)
+    transform: scale(2);
+    
 }
 
 .logo__youtube{
@@ -218,7 +211,7 @@ footer {
 }
 
 .logo__youtube:hover{
-    transform: scale(2)
+    transform: scale(2);
 }
 
 .logo__facebook{
@@ -229,75 +222,21 @@ footer {
 
 
 .logo__facebook:hover{
-    transform: scale(2)
-}
-
-.wrapper{
-    display: grid;
-    gap: 20px;
-    grid-template-areas: 
-    "header"
-    "galeria"
-    "sobremi"
-    "video"
-    "footer";
-
-}
-
-@media  screen and (min-width: 320px) {
-    .wrapper{
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas: 
-        "header header"
-        "galeria galeria"
-        "sobremi sobremi"
-        "video video"
-        "footer footer";
-
-    }
-
-    nav ul {
-        flex-direction: row;
-
-    }
-
-    
-}
-
-@media  screen and (min-width: 700px) {
-    .wrapper{
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas: 
-        "header header"
-        "galeria galeria"
-        "sobremi sobremi"
-        "video video"
-        "footer footer";
-
-    }
-
-    nav ul {
-        flex-direction: row;
-
-    }
-
-    
+    transform: scale(2);
 }
 
 
-
-
-.ornamento{
-    width: 500px;
-    height: 500px;
-
-}
 
 .galeria__tatuajes{
-display: grid;
-grid-template-columns: 500px 500px 500px;
-grid-gap: 10px;
- 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+     
+    }
+
+.ornamento{
+    width: 100%;
+
 }
 
 
