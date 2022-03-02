@@ -103,23 +103,7 @@ h2 {
 }
 
 
-.seccion__sobremi{
-    grid-area: secsobremi;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: whitesmoke;
-    height: 500px;
-    width: 70%;
-    margin: 0 auto;
 
-}
-
-.texto__sobremi{
-    padding: 100px 20px 100px 20px;
-    
-    
-
-}
 
 h3{
     font-size: 25px;
@@ -145,11 +129,13 @@ h3{
 .imagen__sobremi{
     float: right;
     width: 350px;
-    padding: 30px;
+    padding-top: 30px;
     display: flex;
     vertical-align: middle;
 
 } 
+
+
 
 
 
@@ -238,6 +224,52 @@ footer {
     width: 100%;
 
 }
+
+@media screen and (min-width:320px){
+    .galeria__tatuajes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+         
+        }
+    
+    .ornamento{
+        width: 100%;
+    
+    }
+
+}
+
+@media screen and (min-width:700px){
+    .galeria__tatuajes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+         
+        }
+    
+    .ornamento{
+        width: 100%;
+    
+    }
+
+}
+
+@media screen and (min-width:900px){
+    .galeria__tatuajes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+         
+        }
+    
+    .ornamento{
+        width: 100%;
+    
+    }
+
+}
+
 
 
 
