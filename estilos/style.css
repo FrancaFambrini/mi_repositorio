@@ -57,6 +57,7 @@ h1 {
     height: 400px;
     background-image: url(https://images.unsplash.com/photo-1563305589-e4995799dba3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80);
     background-attachment: fixed;
+    width: 100%;
 
     
 }
@@ -128,12 +129,16 @@ h3{
 
 .imagen__sobremi{
     float: right;
-    width: 350px;
+    width: 100%;
     padding-top: 30px;
     display: flex;
     vertical-align: middle;
 
+
 } 
+
+
+
 
 
 
@@ -160,20 +165,22 @@ h4{
 .video__trabajo{
     margin: 0 auto;
     height: 400px;
+    width: 700px;
     display: flex;
     justify-content: center;
 }
 
 
 
-
 footer {
     grid-area: footer;
     padding: 30px;
-    background-color: lightgrey;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 0;
+    border-top: thick black;
 
     
 }
@@ -217,6 +224,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
+    margin-bottom: 10px;
      
     }
 
